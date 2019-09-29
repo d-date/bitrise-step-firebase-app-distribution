@@ -34,6 +34,7 @@ inputs:
   opts:
     title: Firebase Token
     is_required: true
+    is_sensitive: true
     description: 'Required. Your firebase token for CLI. https://firebase.google.com/docs/cli#cli-ci-systems
 
 '
