@@ -2,9 +2,7 @@
 
 set -ex
 
-THIS_SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
-npm install --prefix $THIS_SCRIPT_DIR firebase-tools --save
+curl -sL firebase.tools | bash
 
 firebase appdistribution:distribute "${ipa_path}" \
   --app "${app}" \
