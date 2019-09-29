@@ -38,10 +38,12 @@ inputs:
     description: 'Required. Your firebase token for CLI. https://firebase.google.com/docs/cli#cli-ci-systems
 
 '
-- ipa_path: $BITRISE_IPA_PATH
+- ipa_path: $APP_FILE_PATH
   opts:
-    title: IPA path
+    title: IPA / APK path
     is_required: true
+    description: |-
+      Required. Either .ipa for iOS or .apk for Android should be included.
 - app: $FIREBASE_APP_ID
   opts:
     title: Firebase app id
